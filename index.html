@@ -340,9 +340,17 @@
     /* ─── App Screenshots ─── */
     .screenshots-row {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       margin: 32px 0 20px;
+      align-items: flex-start;
+    }
+
+    .screenshots-livechat-row {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 20px;
+      margin: 0 0 32px;
       align-items: flex-start;
     }
 
@@ -401,6 +409,10 @@
     @media (max-width: 680px) {
       .screenshots-row {
         grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .screenshots-livechat-row {
+        grid-template-columns: 1fr;
         gap: 12px;
       }
       .screenshot-frame {
@@ -699,19 +711,21 @@
         </div>
         <p class="screenshot-caption">Word-order drill</p>
       </div>
+    </div>
+
+    <div class="screenshots-livechat-row">
       <div class="screenshot-item">
         <div class="screenshot-frame">
           <img src="Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-04-25%20at%2011.10.44.png" alt="Live Chat — phonetic pronunciation guide">
         </div>
         <p class="screenshot-caption">Phonetic coaching</p>
       </div>
-    </div>
-
-    <div class="screenshot-landscape-wrap">
-      <div class="screenshot-frame-landscape">
-        <img src="Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-04-25%20at%2011.10.50.png" alt="Live Chat — landscape native script view">
+      <div class="screenshot-item">
+        <div class="screenshot-frame-landscape">
+          <img src="Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-04-25%20at%2011.10.50.png" alt="Live Chat — landscape native script view">
+        </div>
+        <p class="screenshot-caption" style="margin-top: 10px;">Tilt to read the native script line</p>
       </div>
-      <p class="screenshot-caption" style="margin-top: 10px;">Tilt to read the native script line</p>
     </div>
 
     <div class="section-body">
